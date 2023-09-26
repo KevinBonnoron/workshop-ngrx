@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`AddComponent should match snaptshot 1`] = `
+<ng-component
+  productsService={[Function Object]}
+  router={[Function _Router]}
+>
+  <h1>
+    Ajout d'un produit
+  </h1><products-ui-form>
+    <form
+      novalidate=""
+    >
+      <mat-form-field
+        appearance="outline"
+        class="mat-mdc-form-field"
+      >
+        <div
+          class="mat-mdc-text-field-wrapper mdc-text-field"
+        >
+          <div
+            class="mat-mdc-form-field-flex"
+          >
+            <div
+              class="mat-mdc-form-field-infix"
+            >
+              <input
+                class="mat-mdc-input-element"
+                formcontrolname="name"
+                matinput=""
+              />
+            </div>
+          </div>
+        </div>
+        <div
+          class="mat-mdc-form-field-subscript-wrapper mat-mdc-form-field-bottom-align"
+        >
+        </div>
+      </mat-form-field>
+      <button
+        class="mdc-button mdc-button--raised mat-mdc-raised-button mat-primary"
+        color="primary"
+        mat-raised-button=""
+        mat-ripple-loader-class-name="mat-mdc-button-ripple"
+        mat-ripple-loader-uninitialized=""
+      >
+        <span
+          class="mat-mdc-button-persistent-ripple"
+        />
+        <span
+          class="mdc-button__label"
+        >
+          Valider
+        </span>
+        <span
+          class="mat-mdc-focus-indicator"
+        />
+        <span
+          class="mat-mdc-button-touch-target"
+        />
+      </button>
+    </form>
+  </products-ui-form>
+</ng-component>
+`;

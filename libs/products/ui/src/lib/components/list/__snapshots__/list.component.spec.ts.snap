@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ListComponent should match snaptshot 1`] = `
+<products-ui-list
+  products$={[Function Observable]}
+  productsService={[Function Object]}
+>
+  <h1>
+    Liste des produits
+  </h1>
+</products-ui-list>
+`;

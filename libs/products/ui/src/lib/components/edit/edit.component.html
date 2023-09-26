@@ -1,0 +1,7 @@
+<h1>Edition d'un produit</h1>
+
+<ng-container *ngIf="(product$ | async) as product">
+  <products-ui-form [product]="product" (save)="onSave($event)"></products-ui-form>
+</ng-container>
+
+<button mat-raised-button color="warn" (click)="onDelete()">Supprimer</button>
