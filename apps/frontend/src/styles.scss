@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, 'Helvetica Neue', sans-serif;
+}
+
+@layer components {
+  h1 {
+    @apply mb-4 text-4xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl lg:text-6xl
+  }
+}
+
+// This is a regression from angular material https://github.com/angular/components/issues/26449
+.mat-mdc-form-field .mdc-notched-outline__notch {
+  border-right: 0px !important;
+}
+
+.mat-mdc-text-field-wrapper.mdc-text-field--outlined .mat-mdc-form-field-infix:has(> mat-number-input) {
+  padding-top: 12px !important;
+  padding-bottom: 8px !important;
+}
+
+.mat-mdc-form-field {
+  display: unset !important;
+}
+
+fieldset {
+  padding: 20px;
+  border-radius: 4px;
+  border: 1px solid rgba(0, 0, 0, 0.38);
+
+  legend {
+    font: normal normal 400 16px Roboto, sans-serif;
+    letter-spacing: 0.5;
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .mat-form-field {
+    padding: 10px 0;
+  }
+}

@@ -1,0 +1,11 @@
+<h1>Liste des produits</h1>
+
+<ng-container *ngIf="products$ | async as products">
+  <div class="grid grid-cols-4 gap-4">
+    <products-ui-card *ngFor="let product of products" [product]="product"></products-ui-card>
+  </div>
+  
+  <div class="pt-4">
+    <button mat-raised-button color="primary" [routerLink]="['/add']">Ajouter un produit</button>
+  </div>
+</ng-container>

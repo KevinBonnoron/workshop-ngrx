@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`EditComponent should match snaptshot 1`] = `
+<ng-component
+  activatedRoute={[Function Object]}
+  product$={[Function Observable]}
+  productsService={[Function Object]}
+  router={[Function _Router]}
+>
+  <h1>
+    Edition d'un produit
+  </h1><button
+    class="mdc-button mdc-button--raised mat-mdc-raised-button mat-warn"
+    color="warn"
+    mat-raised-button=""
+    mat-ripple-loader-class-name="mat-mdc-button-ripple"
+    mat-ripple-loader-uninitialized=""
+  >
+    <span
+      class="mat-mdc-button-persistent-ripple"
+    />
+    <span
+      class="mdc-button__label"
+    >
+      Supprimer
+    </span>
+    <span
+      class="mat-mdc-focus-indicator"
+    />
+    <span
+      class="mat-mdc-button-touch-target"
+    />
+  </button>
+</ng-component>
+`;

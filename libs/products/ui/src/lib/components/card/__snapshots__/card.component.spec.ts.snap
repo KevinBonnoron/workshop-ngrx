@@ -1,0 +1,24 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CardComponent should match snaptshot 1`] = `
+<products-ui-card
+  router={[Function _Router]}
+>
+  <mat-card
+    class="mat-mdc-card mdc-card h-24"
+  >
+    <mat-card-header
+      class="mat-mdc-card-header"
+    >
+      <div
+        class="mat-mdc-card-header-text"
+      >
+        <mat-card-title
+          class="mat-mdc-card-title"
+        >
+        </mat-card-title>
+      </div>
+    </mat-card-header>
+  </mat-card>
+</products-ui-card>
+`;
