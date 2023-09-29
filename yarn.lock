@@ -3025,6 +3025,53 @@
   dependencies:
     tslib "2.6.2"
 
+"@ngrx/component-store@~16.0.0":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/component-store/-/component-store-16.0.1.tgz#193f98264de6401dcea60d06417698ca7d6866aa"
+  integrity sha512-c52V2bHnKV1MRjA+270oEpRa9hTUD7xP8t1eElYzV0ISisILO8xfWB9/C6XOJtjkK6+j6tHQmtiIGK9gZyIh3g==
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/effects@~16.0.0":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/effects/-/effects-16.0.1.tgz#9f303d31797fee93f8c5c7ebab9ce82cb29390a4"
+  integrity sha512-hpmON8p7kT44jIiruLBy3raFkYhNzQ45was0puKPkGhv41VrAoo44UcEn4Aysdx5yHaJc/CMCtI/+emFIpqgGA==
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/entity@~16.0.0":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/entity/-/entity-16.0.1.tgz#fc44bf8f39f013b3bc4ec53cf6a60136094bc44b"
+  integrity sha512-LUqcFnH9+Civwq5F3bQ5CIrev6NYG89q918kDnM2ETmhIm7penjLmSj5uR8C4Byl14MpXArKaQuHQeMWovewFQ==
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/router-store@~16.0.0":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/router-store/-/router-store-16.0.1.tgz#0267ab24389a2078e3e894a2ba275c5b2696ba65"
+  integrity sha512-2lqKK3d6g15VwBH09aIgTEKSGZ2CYcflpYyaHVja0GAg/iGPpc69P9fF76Z3GomsuMD2g8dCYYoFn6fbrqJp+Q==
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/schematics@~16.0.0":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/schematics/-/schematics-16.0.1.tgz#5b36ec7fec391f5bc385339df00ab35037c044ae"
+  integrity sha512-NLRSQF6kjgVFi5/JVTFU6PuuMrQ4lL6SIK81ZPCFEIm3wZH0e4FcQhsKe0D/gqoENTunFquRR4PWr9tdbsa5pg==
+
+"@ngrx/store-devtools@~16.0.0":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/store-devtools/-/store-devtools-16.0.1.tgz#a6fe274e0127eb8164597d5408acd19b75d861e9"
+  integrity sha512-fOk/etV2ldgPgy3BD7v0yK4ocsxNUx7iktjMOVSvfPY/eg6KsfUy0ObQ2/kJasan32wN9rADCVRD6PzLg1Zo8g==
+  dependencies:
+    tslib "^2.0.0"
+
+"@ngrx/store@~16.0.0":
+  version "16.0.1"
+  resolved "https://registry.yarnpkg.com/@ngrx/store/-/store-16.0.1.tgz#0f312d46d8799651f3d8a0e1a08097043962d707"
+  integrity sha512-KkYzF3j29qKOzHcmiArRJgT+ABLqbddj1DuxerNq3A8zWnTDdC4YgNpDOKru8hQWb3pQ77ZbglLati5K9F8HnQ==
+  dependencies:
+    tslib "^2.0.0"
+
 "@ngtools/webpack@16.2.3":
   version "16.2.3"
   resolved "https://registry.yarnpkg.com/@ngtools/webpack/-/webpack-16.2.3.tgz#00bb16d9bf6e3420185cbcbc7528b9224a00d6e3"
@@ -7377,6 +7424,13 @@ jake@^10.8.5:
     filelist "^1.0.4"
     minimatch "^3.1.2"
 
+jasmine-marbles@~0.9.1:
+  version "0.9.2"
+  resolved "https://registry.yarnpkg.com/jasmine-marbles/-/jasmine-marbles-0.9.2.tgz#5adfee5f72c7f24270687fa64a6e8a8613ffa841"
+  integrity sha512-T7RjG4fRsdiGGzbQZ6Kj39qYt6O1/KIcR4FkUNsD3DUGkd/AzpwzN+xtk0DXlLWEz5BaVdK1SzMgQDVw879c4Q==
+  dependencies:
+    lodash "^4.17.20"
+
 jest-changed-files@^29.7.0:
   version "29.7.0"
   resolved "https://registry.yarnpkg.com/jest-changed-files/-/jest-changed-files-29.7.0.tgz#1c06d07e77c78e1585d020424dedc10d6e17ac3a"
@@ -8092,7 +8146,7 @@ lodash.uniq@^4.5.0:
   resolved "https://registry.yarnpkg.com/lodash.uniq/-/lodash.uniq-4.5.0.tgz#d0225373aeb652adc1bc82e4945339a842754773"
   integrity sha512-xfBaXQd9ryd9dlSDvnvI0lvxfLJlYAZzXomUYzLKtUeOQvOP5piqAWuGtrhWeqaXK9hhoM/iyJc5AV+XfsX3HQ==
 
-lodash@^4.17.21, lodash@^4.7.0:
+lodash@^4.17.20, lodash@^4.17.21, lodash@^4.7.0:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -10756,7 +10810,7 @@ tslib@2.6.1:
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.1.tgz#fd8c9a0ff42590b25703c0acb3de3d3f4ede0410"
   integrity sha512-t0hLfiEKfMUoqhG+U1oid7Pva4bbDPHYfJNiB7BiIjRkj1pyC++4N3huJfqY6aRH6VTB0rvtzQwjM4K6qpfOig==
 
-tslib@2.6.2, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.0, tslib@^2.4.0:
+tslib@2.6.2, tslib@^2.0.0, tslib@^2.0.3, tslib@^2.1.0, tslib@^2.3.0, tslib@^2.4.0:
   version "2.6.2"
   resolved "https://registry.yarnpkg.com/tslib/-/tslib-2.6.2.tgz#703ac29425e7b37cd6fd456e92404d46d1f3e4ae"
   integrity sha512-AEYxH93jGFPn/a2iVAwW87VuUIkR1FVUKB77NwMF7nBTDkDrrT/Hpt/IrCJ0QXhW27jTBDcf5ZY7w6RiqTMw2Q==
