@@ -1,7 +1,7 @@
-import { EntityState, EntityAdapter, createEntityAdapter } from '@ngrx/entity';
-import { createReducer, on, Action } from '@ngrx/store';
+import { EntityAdapter, EntityState, createEntityAdapter } from '@ngrx/entity';
+import { Action, createReducer, on } from '@ngrx/store';
 
-import * as ProductsActions from './products.actions';
+import { ProductsActions } from './products.actions';
 import { ProductsEntity } from './products.models';
 
 export const PRODUCTS_FEATURE_KEY = 'products';
@@ -27,15 +27,15 @@ export const initialProductsState: ProductsState =
 
 const reducer = createReducer(
   initialProductsState,
-  on(ProductsActions.initProducts, (state) => ({
+  on(ProductsActions.load, (state) => ({
     ...state,
     loaded: false,
     error: null,
   })),
-  on(ProductsActions.loadProductsSuccess, (state, { products }) =>
+  on(ProductsActions.loadSuccess, (state, { products }) =>
     productsAdapter.setAll(products, { ...state, loaded: true })
   ),
-  on(ProductsActions.loadProductsFailure, (state, { error }) => ({
+  on(ProductsActions.loadFailure, (state, { error }) => ({
     ...state,
     error,
   }))

@@ -1,15 +1,15 @@
 import { ProductsEntity } from './products.models';
 import {
-  productsAdapter,
   ProductsPartialState,
   initialProductsState,
+  productsAdapter,
 } from './products.reducer';
 import * as ProductsSelectors from './products.selectors';
 
 describe('Products Selectors', () => {
   const ERROR_MSG = 'No Error Available';
   const getProductsId = (it: ProductsEntity) => it.id;
-  const createProductsEntity = (id: string, name = '') =>
+  const createProductsEntity = (id: number, name = '') =>
     ({
       id,
       name: name || `name-${id}`,
@@ -21,13 +21,13 @@ describe('Products Selectors', () => {
     state = {
       products: productsAdapter.setAll(
         [
-          createProductsEntity('PRODUCT-AAA'),
-          createProductsEntity('PRODUCT-BBB'),
-          createProductsEntity('PRODUCT-CCC'),
+          createProductsEntity(0),
+          createProductsEntity(1),
+          createProductsEntity(2),
         ],
         {
           ...initialProductsState,
-          selectedId: 'PRODUCT-BBB',
+          selectedId: 1,
           error: ERROR_MSG,
           loaded: true,
         }
@@ -41,14 +41,14 @@ describe('Products Selectors', () => {
       const selId = getProductsId(results[1]);
 
       expect(results.length).toBe(3);
-      expect(selId).toBe('PRODUCT-BBB');
+      expect(selId).toBe(1);
     });
 
     it('selectEntity() should return the selected Entity', () => {
       const result = ProductsSelectors.selectEntity(state) as ProductsEntity;
       const selId = getProductsId(result);
 
-      expect(selId).toBe('PRODUCT-BBB');
+      expect(selId).toBe(1);
     });
 
     it('selectProductsLoaded() should return the current "loaded" status', () => {
