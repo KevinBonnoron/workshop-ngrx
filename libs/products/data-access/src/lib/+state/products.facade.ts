@@ -1,8 +1,7 @@
 import { Injectable, inject } from '@angular/core';
-import { select, Store, Action } from '@ngrx/store';
+import { Store, select } from '@ngrx/store';
 
-import * as ProductsActions from './products.actions';
-import * as ProductsFeature from './products.reducer';
+import { ProductsActions } from './products.actions';
 import * as ProductsSelectors from './products.selectors';
 
 @Injectable()
@@ -21,7 +20,7 @@ export class ProductsFacade {
    * Use the initialization action to perform one
    * or more tasks in your Effects.
    */
-  init() {
-    this.store.dispatch(ProductsActions.initProducts());
+  load() {
+    this.store.dispatch(ProductsActions.load());
   }
 }

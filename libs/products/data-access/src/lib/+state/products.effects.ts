@@ -1,8 +1,7 @@
 import { Injectable, inject } from '@angular/core';
-import { createEffect, Actions, ofType } from '@ngrx/effects';
-import { switchMap, catchError, of } from 'rxjs';
-import * as ProductsActions from './products.actions';
-import * as ProductsFeature from './products.reducer';
+import { Actions, createEffect, ofType } from '@ngrx/effects';
+import { catchError, of, switchMap } from 'rxjs';
+import { ProductsActions } from './products.actions';
 
 @Injectable()
 export class ProductsEffects {
@@ -10,13 +9,13 @@ export class ProductsEffects {
 
   init$ = createEffect(() =>
     this.actions$.pipe(
-      ofType(ProductsActions.initProducts),
+      ofType(ProductsActions.load),
       switchMap(() =>
-        of(ProductsActions.loadProductsSuccess({ products: [] }))
+        of(ProductsActions.loadSuccess({ products: [] }))
       ),
       catchError((error) => {
         console.error('Error', error);
-        return of(ProductsActions.loadProductsFailure({ error }));
+        return of(ProductsActions.loadFailure({ error }));
       })
     )
   );
